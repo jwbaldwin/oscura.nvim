@@ -49,7 +49,7 @@ local themes = {
 					bg = palette.bg_word_highlight,
 				},
 				directory = {
-					fg = palette.blue,
+					fg = palette.yellow_03,
 				},
 				diff = {
 					add = {
@@ -236,9 +236,16 @@ local themes = {
 						},
 					},
 				},
+				function_keyword = {
+					fg = palette.purple,
+					italic = config.italic_function.declaration,
+				},
 				keyword = {
 					fg = palette.keyword,
 					italic = config.italic_keyword,
+				},
+				module = {
+					fg = palette.yellow,
 				},
 				operator = {
 					fg = palette.operator,
@@ -252,7 +259,7 @@ local themes = {
 					},
 				},
 				special = {
-					fg = palette.blue,
+					fg = palette.orange_02,
 				},
 				delimiter = {
 					fg = palette.brackets[1],

@@ -1,3 +1,5 @@
+local pallete = require("oscura.colors")
+
 local M = {}
 
 --- @param theme OscuraThemeDark
@@ -191,7 +193,7 @@ function M.get(theme)
 
 		["Error"] = { fg = theme.diagnostic.error.fg },
 
-		["Todo"] = { fg = theme.black, bg = theme.syntax.todo.bg },
+		["Todo"] = { bg = theme.syntax.todo.bg },
 
 		["Added"] = { fg = theme.syntax.added.fg, bg = theme.syntax.added.bg },
 		["Changed"] = {
@@ -214,6 +216,7 @@ function M.get(theme)
 		["@diff.delta"] = { link = "DiffChange" },
 		["@diff.minus"] = { link = "DiffDelete" },
 		["@diff.plus"] = { link = "DiffAdd" },
+		["@keyword.function"] = { fg = theme.syntax.function_keyword.fg, italic = theme.syntax.italic },
 		["@function"] = {
 			fg = theme.syntax.function_.fg,
 			italic = theme.syntax.function_.italic.declaration,
@@ -238,7 +241,7 @@ function M.get(theme)
 			fg = theme.syntax.function_.fg,
 			italic = theme.syntax.function_.italic.call,
 		},
-		["@module"] = { link = "Identifier" },
+		["@module"] = { fg = theme.syntax.module.fg },
 		["@storageclass.rust"] = { link = "Keyword" },
 		["@tag.attribute"] = { fg = theme.syntax.attribute.fg },
 		["@tag.delimiter"] = { fg = theme.treesitter.tag.delimiter.fg },
