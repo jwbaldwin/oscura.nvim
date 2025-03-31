@@ -627,7 +627,7 @@ function M.get(theme)
 			bg = theme.snacks.picker.list.bg,
 			fg = theme.mini.indentscope.fg,
 		},
-		
+
 		-- Additional highlight groups for Markdown
 		["markdownHeading"] = { fg = theme.syntax.function_.fg, bold = true },
 		["markdownH1"] = { fg = theme.syntax.function_.fg, bold = true },
@@ -644,7 +644,7 @@ function M.get(theme)
 		["markdownRule"] = { fg = theme.editor.non_text.fg },
 		["markdownLinkText"] = { fg = theme.syntax.string.fg, underline = true },
 		["markdownUrl"] = { fg = theme.blue, underline = true },
-		
+
 		-- Additional Web Development highlights
 		["htmlTag"] = { fg = theme.syntax.delimiter.fg },
 		["htmlEndTag"] = { fg = theme.syntax.delimiter.fg },
@@ -654,7 +654,7 @@ function M.get(theme)
 		["htmlLink"] = { fg = theme.blue, underline = true },
 		["htmlSpecialChar"] = { fg = theme.syntax.number.fg },
 		["htmlSpecialTagName"] = { fg = theme.syntax.tag.fg },
-		
+
 		["cssTagName"] = { fg = theme.syntax.tag.fg },
 		["cssClassName"] = { fg = theme.syntax.tag.fg },
 		["cssIdentifier"] = { fg = theme.syntax.tag.fg },
@@ -665,15 +665,15 @@ function M.get(theme)
 		["cssAttr"] = { fg = theme.syntax.string.fg },
 		["cssAttrRegion"] = { fg = theme.syntax.string.fg },
 		["cssFunction"] = { fg = theme.syntax.function_.fg },
-		
+
 		["jsonKeyword"] = { fg = theme.syntax.tag.fg },
 		["jsonString"] = { fg = theme.syntax.string.fg },
 		["jsonNumber"] = { fg = theme.syntax.number.fg },
 		["jsonBoolean"] = { fg = theme.syntax.number.fg },
 		["jsonNull"] = { fg = theme.syntax.keyword.fg, italic = true },
 
-        -- URL Highlighting
-        ["@text.uri"] = { fg = theme.blue, underline = true },
+		-- URL Highlighting
+		["@text.uri"] = { fg = theme.blue, underline = true },
 	}
 end
 
